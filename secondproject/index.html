@@ -4,7 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding</title>
-    <link rel="stylesheet" href="/website-style-idea-1/secondproject/css/style.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            min-height: 100vh;
+            background:url('/secondproject/img/background.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        nav{
+            background-color: white;
+            box-shadow: 3px 3px 5px;
+
+        }
+        nav ul{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        nav a{
+            height: 100%;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover{
+            background-color: #f0f0f0;
+        }
+        nav li:first-child{
+            margin-right: auto;
+            font-weight: bold;
+        }
+        nav li{
+            height: 50px;
+        }
+        .sidebar{
+            position:fixed;
+            top:0;
+            right:0;
+            height: 100vh;
+            width: 250px;
+            background-color: rgb(255,255,255,0.2);
+            display: none;
+            backdrop-filter: blur(10px);
+            z-index: 999;
+            box-sizing: -10px 0px 10px rgba(15, 15, 15, 0.1);
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        .sidebar li{
+            width: 100%;
+        }
+        @media(max-width:800px){
+            .hideToolMobile{
+                display:none;
+            }
+        }
+
+    </style>
 </head>
 <body>
     <nav>
